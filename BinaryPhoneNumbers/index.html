@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <style>
+            #number{
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="number">0</p>
+        <input type="checkbox" id="1">
+        <input type="checkbox" id="2">
+        <input type="checkbox" id="3">
+        <input type="checkbox" id="4">
+        <input type="checkbox" id="5">
+        <input type="checkbox" id="6">
+        <input type="checkbox" id="7">
+        <input type="checkbox" id="8">
+        <input type="checkbox" id="9">
+        <input type="checkbox" id="10">
+        <input type="checkbox" id="11">
+        <input type="checkbox" id="12">
+        <input type="checkbox" id="13">
+        <input type="checkbox" id="14">
+        <input type="checkbox" id="15">
+        <input type="checkbox" id="16">
+        <input type="checkbox" id="17">
+        <input type="checkbox" id="18">
+        <input type="checkbox" id="19">
+        <input type="checkbox" id="20">
+        <input type="checkbox" id="21">
+        <input type="checkbox" id="22">
+        <input type="checkbox" id="23">
+        <input type="checkbox" id="24">
+        <input type="checkbox" id="25">
+        <input type="checkbox" id="26">
+        <input type="checkbox" id="27">
+        <input type="checkbox" id="28">
+        <input type="checkbox" id="29">
+        <input type="checkbox" id="30">
+        <input type="checkbox" id="31">
+        <input type="checkbox" id="32">
+        <input type="checkbox" id="33">
+        <input type="checkbox" id="34">
+        <button id="Submit">Submit</button>
+    </body>
+        <script>
+            $("#Submit").click(function() {
+                var x=0;
+                x = $("#1").is(':checked') ? x+1 : x;
+                x = $("#2").is(':checked') ? x+2 : x;
+                x = $("#3").is(':checked') ? x+4 : x;
+                x = $("#4").is(':checked') ? x+8 : x;
+                x = $("#5").is(':checked') ? x+16 : x;
+                x = $("#6").is(':checked') ? x+32 : x;
+                x = $("#7").is(':checked') ? x+64 : x;
+                x = $("#8").is(':checked') ? x+128 : x;
+                x = $("#9").is(':checked') ? x+256 : x;
+                x = $("#10").is(':checked') ? x+512 : x;
+                x = $("#11").is(':checked') ? x+1024 : x;
+                x = $("#12").is(':checked') ? x+2048 : x;
+                x = $("#13").is(':checked') ? x+4096 : x;
+                x = $("#14").is(':checked') ? x+8192 : x;
+                x = $("#15").is(':checked') ? x+16384 : x;
+                x = $("#16").is(':checked') ? x+32768 : x;
+                x = $("#17").is(':checked') ? x+65536 : x;
+                x = $("#18").is(':checked') ? x+131072 : x;
+                x = $("#19").is(':checked') ? x+262144 : x;
+                x = $("#20").is(':checked') ? x+524288 : x;
+                x = $("#21").is(':checked') ? x+1048576 : x;
+                x = $("#22").is(':checked') ? x+2097152 : x;
+                x = $("#23").is(':checked') ? x+4194304 : x;
+                x = $("#24").is(':checked') ? x+8388608 : x;
+                x = $("#25").is(':checked') ? x+16777216 : x;
+                x = $("#26").is(':checked') ? x+33554432 : x;
+                x = $("#27").is(':checked') ? x+67108864 : x;
+                x = $("#28").is(':checked') ? x+134217728 : x;
+                x = $("#29").is(':checked') ? x+268435456 : x;
+                x = $("#30").is(':checked') ? x+536870912 : x;
+                x = $("#31").is(':checked') ? x+1073741824 : x;
+                x = $("#32").is(':checked') ? x+2147483648 : x;
+                x = $("#33").is(':checked') ? x+4294967296 : x;
+                x = $("#34").is(':checked') ? x+8589934592 : x;
+                $("#number").html(x)
+            });
+        </script>
+</html>

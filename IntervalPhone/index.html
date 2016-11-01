@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <style>
+            #number{
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="number">0</p>
+        <button id="Submit">Stop and Submit</button>
+    </body>
+        <script>
+            var x=0;
+            var y=true
+            setInterval(function(){
+                if (y==true){
+                    x=x+1
+                    $("#number").html(x)
+                }
+            }, 1);
+            $("#Submit").click(function() {
+                y=false
+            });
+        </script>
+</html>

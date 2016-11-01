@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div id="oi">
+        <button id="Submit">Submit</button><br>
+            </div>
+    </body>
+        <script>
+            i=1000000000
+            setInterval(function(){
+                if(i<10000000000){
+                    $( "#oi" ).append('<input type="radio" name="numberval">'+i+'<br>');
+                    i=i+1
+                }
+            });
+        </script>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <style>
+            #number{
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="number"></p>
+        <button id="less">Less</button>
+        <button id="more">More</button>
+    </body>
+        <script>
+            var upperlimit=10000000000
+            var lowerlimit=0
+            $("#number").html(Math.random()*(upperlimit-lowerlimit)+lowerlimit)
+            $("#more").click(function() {
+                lowerlimit=($("#number").text())
+                $("#number").html(Math.random()*(upperlimit-lowerlimit)+(lowerlimit/1))
+            });
+            $("#less").click(function() {
+                upperlimit=($("#number").text())
+                $("#number").html(Math.random()*(upperlimit-lowerlimit)+(lowerlimit/1))
+            });
+            $(document).keypress(function(e) {
+                if(e.which == 106) {
+                upperlimit=($("#number").text())
+                $("#number").html(Math.random()*(upperlimit-lowerlimit)+(lowerlimit/1))
+                }
+            });
+            $(document).keypress(function(e) {
+                if(e.which == 108) {
+                lowerlimit=($("#number").text())
+                $("#number").html(Math.random()*(upperlimit-lowerlimit)+(lowerlimit/1))
+                }
+            });
+        </script>
+</html>

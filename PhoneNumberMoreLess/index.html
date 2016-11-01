@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <style>
+            #number{
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="number">5000000000</p>
+        <button id="less">Less</button>
+        <button id="more">More</button>
+        <p id="clicked">2</p>
+    </body>
+        <script>
+            $("#more").click(function() {
+                x=Math.pow(0.5,$("#clicked").text())
+                $("#number").html($("#number").text()/1+(x*10000000000))
+                $("#clicked").html($("#clicked").text()/1+1)
+            });
+            $("#less").click(function() {
+                x=Math.pow(0.5,$("#clicked").text())
+                $("#number").html($("#number").text()/1-(x*10000000000))
+                $("#clicked").html($("#clicked").text()/1+1)
+            });
+            $(document).keypress(function(e) {
+                if(e.which == 106) {
+                x=Math.pow(0.5,$("#clicked").text())
+                $("#number").html($("#number").text()/1-(x*10000000000))
+                $("#clicked").html($("#clicked").text()/1+1)
+                }
+            });
+            $(document).keypress(function(e) {
+                if(e.which == 108) {
+                x=Math.pow(0.5,$("#clicked").text())
+                $("#number").html($("#number").text()/1+(x*10000000000))
+                $("#clicked").html($("#clicked").text()/1+1)
+                }
+            });
+        </script>
+</html>
