@@ -1,90 +1,15 @@
 <html>
     <head>
-        <script src="jquery.js"></script>
-        <style>
-            #number{
-                font-size: 100px;
-            }
-            button{
-                position:fixed;
-            }
-            #scramble{
-                margin-left:100px
-            }
-        </style>
     </head>
     <body>
-        <p id="number"></p>
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button>
-        <button id="4">4</button>
-        <button id="5">5</button>
-        <button id="6">6</button>
-        <button id="7">7</button>
-        <button id="8">8</button>
-        <button id="9">9</button>
-        <button id="0">0</button>
-        <button id="Submit">Submit</button>
-        <button id="scramble">Scramble again</button>
+        <a href="https://chamington.github.io/shittyPhoneSubmitters/AllNumbersAsRadioButtonOptions/">All numbers as radio button options</a>
+        <a href="https://chamington.github.io/shittyPhoneSubmitters/BinaryPhoneNumbers/">It has to be written in banary in check boxes</a>
+        <a href="https://chamington.github.io/shittyPhoneSubmitters/IntervalPhone/">The value keeps increasing and there's a button to stop it</a>
+        <a href="https://chamington.github.io/shittyPhoneSubmitters/PhoneNumberMoreLess/">Just click more or less, and with exponential decay, it gets to the number</a>
+        <a href="https://chamington.github.io/shittyPhoneSubmitters/PhoneNumberMoreLessRandom/">Same thing, but with random numbers</a>
+        <a href="https://chamington.github.io/shittyPhoneSubmitters/RandomIntervalPhone/">A random string of numbers and a button to stop it</a>
+        <a href="https://chamington.github.io/shittyPhoneSubmitters/ScrambledTouchpad/">A touchpad, but it scrambles itself</a>
     </body>
         <script>
-            function scramblebuttons(){
-                $("#1").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#2").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#3").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#4").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#5").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#6").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#7").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#8").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#9").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#0").css("margin-left",Math.random()*window.innerWidth+"px");
-                $("#1").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#2").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#3").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#4").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#5").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#6").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#7").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#8").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#9").css("margin-top",Math.random()*window.innerHeight+"px");
-                $("#0").css("margin-top",Math.random()*window.innerHeight+"px");
-            }
-            scramblebuttons();
-            
-            $("button").click(function() {
-                scramblebuttons();
-            });
-            $("#1").click(function() {
-                $("#number").html($("#number").text()+"1")
-            });
-            $("#2").click(function() {
-                $("#number").html($("#number").text()+"2")
-            });
-            $("#3").click(function() {
-                $("#number").html($("#number").text()+"3")
-            });
-            $("#4").click(function() {
-                $("#number").html($("#number").text()+"4")
-            });
-            $("#5").click(function() {
-                $("#number").html($("#number").text()+"5")
-            });
-            $("#6").click(function() {
-                $("#number").html($("#number").text()+"6")
-            });
-            $("#7").click(function() {
-                $("#number").html($("#number").text()+"7")
-            });
-            $("#8").click(function() {
-                $("#number").html($("#number").text()+"8")
-            });
-            $("#9").click(function() {
-                $("#number").html($("#number").text()+"9")
-            });
-            $("#0").click(function() {
-                $("#number").html($("#number").text()+"0")
-            });
         </script>
 </html>
